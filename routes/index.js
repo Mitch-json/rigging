@@ -17,7 +17,7 @@ router.post('/',async function(req, res, next) {
   try {
     await newUser.save()
     console.log('User Created');
-    res.redirect('/auth');
+    res.redirect('https://www.uonbi.ac.ke');
   } catch (error) {
     console.log(error)
     res.redirect('/');
